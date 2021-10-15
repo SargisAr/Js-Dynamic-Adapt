@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Dynamic Adapt</title>
+    <style>
+        *{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        .block{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="example">
+        <div class="block red">1</div>
+        <div class="block green">2</div>
+        <div class="block blue">3</div>
+    </div>
+
+    <div data-da=".example,1000,2" class="block yellow">4</div>
+
+    <script src="./dynamicAdapt.js"></script>
+</body>
+</html>
